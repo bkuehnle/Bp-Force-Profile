@@ -2,10 +2,11 @@
 /*
 Plugin Name: Bp Force Profile
 Description: Bp Force Profile
-Author: Cajet Régis
+Author: Cajet Régis - updated by BK Software
 License: GNU GENERAL PUBLIC LICENSE 2.0 or later http://www.gnu.org/licenses/gpl.txt
 Version: 1.1.1
 Text Domain: bp-force-profile
+Author URI:  https://github.com/bkuehhnle/Bp-Force-Profile.git
 Network: true
 */
 
@@ -25,10 +26,10 @@ define( 'BP_FP_PLUGIN_URL', WP_PLUGIN_URL . '/' . BP_FP_PLUGIN_NAME );
 /**
  * Init the plugin
  */
-function bp_fp_init() 
+function bp_fp_init()
 {
 	// this plugin is useless without profiles
-	switch ( false ) 
+	switch ( false )
 	{
 		case ( bp_is_active( 'xprofile' ) ):
 			return;
@@ -51,7 +52,7 @@ function bp_fp_admin_menu()
   	else:
    		$user_is_admin = false;
   	endif;
-    
+
 	if ( !$user_is_admin )
 		return false;
 
@@ -63,12 +64,12 @@ function bp_fp_admin_menu()
 /**
  * Plugin launcher
  */
-function bp_fp_launch() 
+function bp_fp_launch()
 {
-	if (is_user_logged_in()) 
+	if (is_user_logged_in())
 	{
 		$user_id 	= wp_get_current_user()->ID;
-		$current_url  = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		$current_url  = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 		$redirect_url = bp_fp_get_redirect_url($user_id);
 
 		if (strpos($current_url, $redirect_url) === false)
@@ -78,15 +79,15 @@ function bp_fp_launch()
 			$bp_prefix  	 = bp_core_get_table_prefix();
 			$xprofile_fields = $wpdb->get_results("SELECT count(*) AS empty_fields_count FROM {$bp_prefix}bp_xprofile_fields WHERE parent_id = 0 AND is_required = 1 AND id NOT IN (SELECT field_id FROM {$bp_prefix}bp_xprofile_data WHERE user_id = {$user_id} AND `value` IS NOT NULL AND `value` != '')");
 
-			foreach ($xprofile_fields as $field) 
+			foreach ($xprofile_fields as $field)
 			{
-				if ($field->empty_fields_count > 0)	
+				if ($field->empty_fields_count > 0)
 				{
 					wp_redirect($redirect_url);
 					exit;
 				}
 			}
-		}		
+		}
 	}
 }
 
@@ -101,12 +102,12 @@ function bp_fp_styles()
 /**
  * Plugin notice
  */
-function bp_fp_notice() 
+function bp_fp_notice()
 {
-	if (is_user_logged_in()) 
+	if (is_user_logged_in())
 	{
 		$user_id 	= wp_get_current_user()->ID;
-		$current_url  = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		$current_url  = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 		$redirect_url = bp_fp_get_redirect_url($user_id);
 
 		if (strpos($current_url, $redirect_url) !== false)
@@ -115,14 +116,14 @@ function bp_fp_notice()
 
 			$bp_prefix  	 = bp_core_get_table_prefix();
 			$xprofile_fields = $wpdb->get_results("SELECT `name` FROM {$bp_prefix}bp_xprofile_fields WHERE parent_id = 0 AND is_required = 1 AND id NOT IN (SELECT field_id FROM {$bp_prefix}bp_xprofile_data WHERE user_id = {$user_id} AND `value` IS NOT NULL AND `value` != '')");
-	
+
 			$xprofile_fields_count = count($xprofile_fields);
 			if ($xprofile_fields_count > 0)
 			{
 				$message = '<div id="bp_fp_message">' . __('Please complete your profile to continue', 'bp-force-profile') . ' (' . $xprofile_fields_count . __(' fields are missing', 'bp-force-profile') . ')</div>';
 				$message .= '<ul id="bp_fp_fields">';
 
-				foreach ($xprofile_fields as $field) 
+				foreach ($xprofile_fields as $field)
 				{
 					$message .= '<li>' . $field->name . '</li>';
 				}
@@ -130,8 +131,8 @@ function bp_fp_notice()
 				$message .= '</ul>';
 
 				echo '<div id="bp_fp_notice"><div id="bp_fp_container" class="red">' . $message . '</div></div>';
-			}	
-		}	
+			}
+		}
 	}
 }
 
