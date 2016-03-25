@@ -1,0 +1,96 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bp-force-profile\n"
+"POT-Creation-Date: 2012-12-08 00:50-0500\n"
+"PO-Revision-Date: 2012-12-29 08:54+0400\n"
+"Last-Translator: RJ <romik.jan@gmail.com>\n"
+"Language-Team: \n"
+"Language: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1) ;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: D:\\bp-force-profile\n"
+
+#: D:\bp-force-profile/bp-fp-admin.php:7
+#: D:\bp-force-profile/bp-fp-loader.php:60
+msgid "Bp Force Profile"
+msgstr "Bp Force Profile"
+
+#: D:\bp-force-profile/bp-fp-admin.php:9
+msgid "Thank you for installing Bp Force Profile!"
+msgstr "Thank you for installing Bp Force Profile!"
+
+#: D:\bp-force-profile/bp-fp-admin.php:15
+msgid "Informations"
+msgstr "Informations"
+
+#: D:\bp-force-profile/bp-fp-admin.php:21
+msgid "Version"
+msgstr "Version"
+
+#: D:\bp-force-profile/bp-fp-admin.php:27
+msgid "Quick Start"
+msgstr "Quick Start"
+
+#: D:\bp-force-profile/bp-fp-admin.php:29
+msgid ""
+"There are no additional installation steps required after plugin activation. "
+"Each users with a non complete profile are redirecting to their profile page "
+"and a notice is displayed with the required fields."
+msgstr ""
+"There are no additional installation steps required after plugin activation. "
+"Each users with a non complete profile are redirecting to their profile page "
+"and a notice is displayed with the required fields."
+
+#: D:\bp-force-profile/bp-fp-admin.php:32
+msgid "Support"
+msgstr "Support"
+
+#: D:\bp-force-profile/bp-fp-admin.php:34
+msgid ""
+"For support, go to the plugin's <a href=\"http://wordpress.org/extend/"
+"plugins/bp-force-profile/\" target=\"_blank\">official page</a> on WordPress."
+"org</li>"
+msgstr ""
+"For support, go to the plugin's <a href=\"http://wordpress.org/extend/"
+"plugins/bp-force-profile/\" target=\"_blank\">official page</a> on WordPress."
+"org</li>"
+
+#: D:\bp-force-profile/bp-fp-admin.php:37
+msgid ""
+"Find plugin useful? Please help us ! Small or big thank you for your "
+"donations !"
+msgstr ""
+"Find plugin useful? Please help us ! Small or big thank you for your "
+"donations !"
+
+#: D:\bp-force-profile/bp-fp-admin.php:39
+msgid ""
+"A new plugin from <a href=\"http://regiscajet.com\">Regis Cajet</a>. Have "
+"questions or suggestions? Go to <a href=\"http://regiscajet.com/contact/"
+"\">Contact</a>"
+msgstr ""
+"A new plugin from <a href=\"http://regiscajet.com\">Regis Cajet</a>. Have "
+"questions or suggestions? Go to <a href=\"http://regiscajet.com/contact/"
+"\">Contact</a>"
+
+#: D:\bp-force-profile/bp-fp-admin.php:44
+msgid "paypal_number"
+msgstr "8HPJWNNJSJXV4"
+
+#: D:\bp-force-profile/bp-fp-loader.php:60
+msgid "Bp Force Profile Setup"
+msgstr "Bp Force Profile"
+
+#: D:\bp-force-profile/bp-fp-loader.php:122
+msgid "Please complete your profile to continue"
+msgstr "Вам необходимо заполнить Ваш профиль !<br>"
+
+#: D:\bp-force-profile/bp-fp-loader.php:122
+msgid " fields are missing"
+msgstr " шт. пропущено"

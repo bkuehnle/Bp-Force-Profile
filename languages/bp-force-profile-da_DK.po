@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BuddyPress Force Profile v1.0\n"
+"POT-Creation-Date: 2012-12-30 13:09+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ronni Skansing\n"
+"Language-Team: Ronni Skansing <rskansing@gmail.com>\n"
+"Language: Dansk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: C:\\Users\\QuackQuacker\\Desktop\\bp-force-profile\n"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:7
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-loader.php:60
+msgid "Bp Force Profile"
+msgstr "Bp Tving Profil"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:9
+msgid "Thank you for installing Bp Force Profile!"
+msgstr "Tak fordi du installerede Bp Tving Profil!"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:15
+msgid "Informations"
+msgstr "Information"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:21
+msgid "Version"
+msgstr "Version"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:27
+msgid "Quick Start"
+msgstr "Hurtig Start"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:29
+msgid ""
+"There are no additional installation steps required after plugin activation. "
+"Each users with a non complete profile are redirecting to their profile page "
+"and a notice is displayed with the required fields."
+msgstr ""
+"Der er ingen ekstra installations trin efter pluginet er blevet aktiveret. "
+"Hver bruger med en ukomplet profil bliver rediregeret om til deres profil "
+"side med en besked om hvilke felter der skal udfyldes før de kan forsætte."
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:32
+msgid "Support"
+msgstr "Support"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:34
+msgid ""
+"For support, go to the plugin's <a href=\"http://wordpress.org/extend/"
+"plugins/bp-force-profile/\" target=\"_blank\">official page</a> on WordPress."
+"org</li>"
+msgstr ""
+"For support til dette plugin <a href=\"http://wordpress.org/extend/plugins/"
+"bp-force-profile/\" target=\"_blank\">officelle side</a> på WordPress.org</"
+"li>"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:37
+msgid ""
+"Find plugin useful? Please help us ! Small or big thank you for your "
+"donations !"
+msgstr ""
+"Syntes du dette plugin var brugbart? Hjælp os! Små og store tak for dine "
+"donationer!"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:39
+msgid ""
+"A new plugin from <a href=\"http://regiscajet.com\">Regis Cajet</a>. Have "
+"questions or suggestions? Go to <a href=\"http://regiscajet.com/contact/"
+"\">Contact</a>"
+msgstr ""
+"Plugin lavet af <a href=\"http://regiscajet.com\">Regis Cajet</a>. Spørgsmål "
+"eller forslag? Gå til<a href=\"http://regiscajet.com/contact/\">Kontakt</a>"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-admin.php:44
+msgid "paypal_number"
+msgstr "8HPJWNNJSJXV4"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-loader.php:60
+msgid "Bp Force Profile Setup"
+msgstr "Bp Tving Profil Opsætning"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-loader.php:122
+msgid "Please complete your profile to continue"
+msgstr "Udfyld venligst din profil for at forsætte"
+
+#: C:\Users\QuackQuacker\Desktop\bp-force-profile/bp-fp-loader.php:122
+msgid " fields are missing"
+msgstr " Følgende felter mangler"
