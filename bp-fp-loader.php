@@ -68,7 +68,7 @@ function bp_fp_launch()
 {
 	if (is_user_logged_in())
 	{
-  	if ( $bp->loggedin_user->is_super_admin || $bp->loggedin_user->is_site_admin){
+  	if ( current_user_can('edit_others_posts') ){
    		return;
   	}
 		$user_id 	= wp_get_current_user()->ID;
@@ -109,6 +109,9 @@ function bp_fp_notice()
 {
 	if (is_user_logged_in())
 	{
+  	if ( current_user_can('edit_others_posts') ){
+   		return;
+  	}
 		$user_id 	= wp_get_current_user()->ID;
 		$current_url  = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 		$redirect_url = bp_fp_get_redirect_url($user_id);
